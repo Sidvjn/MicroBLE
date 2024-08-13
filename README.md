@@ -7,6 +7,7 @@ From MicroBLE import MicroBLE
 
 
 Example:
+```
 #main.py
 from machine import Pin
 from MicroBLE import MicroBLE
@@ -30,6 +31,7 @@ def blink(request):
     return "Hello " + str(request[0])
 
 ble.run()
+```
 
 
 

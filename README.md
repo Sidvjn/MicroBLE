@@ -1,4 +1,4 @@
-A (too) simple micropython BLE framework inspired by webframeworks. Uses the first word recieved as the route and all the following characters/numbers as parameters. 
+A (too) simple micropython BLE framework inspired by webframeworks I made for myself. Uses the first word recieved as the route and all the following characters/numbers as parameters. 
 
 Installation:
 Copy MicroBLE.py to your micropython device 
@@ -41,4 +41,4 @@ ble.run()
 
 Tested this on a Micropython ESP32, Bluetooth Serial Monitor on android and also using WebBle on chrome desktop & android. 
 
-One limitation is that there is just a single service and characteristics, but this should suffice for simple use cases. Piggybacked on code shared by others and also got some help from chatgpt.
+Uses a single service and characteristics, that could be a limitation for your use case. Piggybacked on code shared by others and also got some help from chatgpt.

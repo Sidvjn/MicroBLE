@@ -1,11 +1,11 @@
-A (too) simple micropython BLE app inspired by webframeworks I made for myself. Uses the first word recieved as the route and all the following characters/numbers as parameters. 
+A (too) simple micropython BLE app I made for myself, inspired by webframeworks. Uses the first word recieved as the route and all the following characters/numbers as parameters. 
 
 Installation:
 Copy MicroBLE.py to your micropython device 
 or Create a new file named MicroBLE.py on your device in Thonny and paste the raw content.
 
 Use the request=True flag when you want the function to recieve parameters. Request comes as a list with strings and numbers already converted to int data types. 
-Eg: ['World',123,'thirdparam',4]
+Eg: ['World',123,'3rdparam']
 
 From MicroBLE import MicroBLE
 
@@ -31,7 +31,7 @@ def status():
 
 @ble.route('hello', request=True) 
 def blink(request):
-    print("Request:", request) #['World',123,'thirdparam',4]
+    print("Request:", request) #['World',123] 
     return "Hello " + str(request[0]) 
 
 ble.run()
@@ -39,6 +39,6 @@ ble.run()
 
 
 
-Tested this on a Micropython ESP32, Bluetooth Serial Monitor on android and also using WebBle on chrome desktop & android. 
+Tested this on a Micropython ESP32, Bluetooth Serial Monitor on android, and also using WebBle on chrome windows & android. 
 
-Uses a single service and characteristics, that could be a limitation for your use case. Piggybacked on code shared by others and also got some help from chatgpt.
+This uses a single service and characteristic, so that could be a limitation for your use case, but I guess this should suffice for simple use cases. Piggybacked on code shared by others and also got some help from chatgpt.

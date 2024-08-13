@@ -40,3 +40,5 @@ ble.run()
 
 
 Tested this on a Micropython ESP32, Bluetooth Serial Monitor on android and also using WebBle on chrome desktop & android. 
+
+One limitation is that there is just a single service and characteristics, but this should suffice for simple use cases. Piggybacked on code shared by others and also got some help from chatgpt.

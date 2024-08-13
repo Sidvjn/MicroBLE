@@ -1,7 +1,8 @@
 A (too) simple micropython BLE framework inspired by webframeworks. Uses the first word recieved as the route and all the following characters/numbers as parameters. 
 
 Installation:
-Copy MicroBLE.py to your micropython device / Create a new file named MicroBLE.py on your device in Thonny and paste its raw content.
+Copy MicroBLE.py to your micropython device 
+or Create a new file named MicroBLE.py on your device in Thonny and paste the raw content.
 
 Use the request=True flag when you want the function to recieve parameters. Request comes as a list with strings and numbers already converted to int data types. 
 Eg: ['World',123,'thirdparam',4]

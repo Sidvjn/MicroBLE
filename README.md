@@ -1,4 +1,4 @@
-A (too) simple micropython BLE framework inspired by webframeworks I made for myself. Uses the first word recieved as the route and all the following characters/numbers as parameters. 
+A (too) simple micropython BLE app inspired by webframeworks I made for myself. Uses the first word recieved as the route and all the following characters/numbers as parameters. 
 
 Installation:
 Copy MicroBLE.py to your micropython device 
